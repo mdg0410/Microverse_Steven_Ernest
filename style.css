@@ -3,7 +3,7 @@
   }
 
   body {
-    font-family: 'Poppins', sans-serif;
+    font-family:'Courier New';
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.4;
@@ -20,10 +20,15 @@
     width: 100%;
     z-index: -1;
     background: var(--color-darkblue);
-    background-image: linear-gradient( 115deg, rgba(140, 84, 28, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-image: linear-gradient( 115deg, rgba(148, 162, 160, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  .header {
+    padding: 0 0.625rem;
+    margin-bottom: 1.875rem;
   }
 
   .container {
@@ -44,13 +49,14 @@
         width: 100%;
         z-index: -1;
         background: var(--color-darkblue);
-        background-image: linear-gradient( 115deg, rgba(151, 151, 161, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+        background-image: linear-gradient( 115deg, rgba(205, 223, 211, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
       }
     
   }
+
 
   @media (min-width: 576px){
     .container {
@@ -65,7 +71,7 @@
         width: 100%;
         z-index: -1;
         background: var(--color-darkblue);
-        background-image: linear-gradient( 115deg, rgba(140, 84, 28, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+        background-image: linear-gradient( 115deg, rgba(217, 246, 240, 0.8), rgba(243, 237, 157, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -82,7 +88,26 @@
   form {
 
     padding: 2.5rem 0.625rem;
-    opacity: 0.5;
+    opacity: 0.75;
     border-radius: 0.25rem;
     background-image: linear-gradient(to right, rgba(173, 149, 149, 0.785), rgb(214, 202, 236));
   }
+
+  h1, p {
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+  }
+
+  h1 {
+    font-weight: 400;
+    line-height: 1;
+    font-family: "monospace";
+  }
+
+  p{
+    font-family:'Courier New';
+  }
+
+  .form-group{
+    margin-inline: 2rem;
+}
