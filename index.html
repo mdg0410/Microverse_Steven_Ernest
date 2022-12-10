@@ -22,24 +22,24 @@
         <!--End-Header-->
         <!--Form-->
         <form id="survey-form">
-            <!--End-name-->
+            <!--name-->
             <div class="form-group">
                 <label for="name" class="form-label font-monospace" id="name-label">Name</label>
-                <input type="text" class="form-control font-monospace" id="name" placeholder="Enter your name">
+                <input type="text" class="form-control font-monospace" id="name" placeholder="Enter your name" required>
             </div>
             <!--End-name-->
             <br>
             <!--Email-->
             <div class="form-group">
                 <label for="email" class="form-label font-monospace" id="email-label">Email</label>
-                <input type="email" class="form-control font-monospace" id="email" placeholder="Enter your email">
+                <input type="email" class="form-control font-monospace" id="email" placeholder="Enter your email" required>
             </div>
             <!--End-Email-->
             <br>
             <!--Age-->
             <div class="form-group">
                 <label for="age" class="form-label font-monospace" id="age-label">Age</label>
-                <input type="number" min="1" max="200" class="form-control font-monospace" id="number" placeholder="Age">
+                <input type="number" min="1" max="200" class="form-control font-monospace" id="number" placeholder="Age" required>
             </div>
             <!--End-Age-->
             <br>
@@ -106,73 +106,90 @@
                 <label for="link" class="form-label font-monospace" id="link">What is your favorite feature of
                     freeCodeCamp?</label>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <input class="form-check-input" type="checkbox" value="front-end-projects" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
-                      Default checkbox
+                        Front-end Projects
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <input class="form-check-input" type="checkbox" value="back-end-projects" id="flexCheckChecked" checked>
                     <label class="form-check-label" for="flexCheckChecked">
-                      Checked checkbox
+                        Back-end Projects
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <input class="form-check-input" type="checkbox" value="data-visualization" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
-                      Default checkbox
+                        Data Visualization
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <input class="form-check-input" type="checkbox" value="challenges" id="flexCheckChecked" checked>
                     <label class="form-check-label" for="flexCheckChecked">
-                      Checked checkbox
+                        Challenges
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <input class="form-check-input" type="checkbox" value="open-source-community" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
-                      Default checkbox
+                        Open Source Community
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <input class="form-check-input" type="checkbox" value="gitter-help-rooms" id="flexCheckChecked" checked>
                     <label class="form-check-label" for="flexCheckChecked">
-                      Checked checkbox
+                        Gitter help rooms
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <input class="form-check-input" type="checkbox" value="videos" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
-                      Default checkbox
+                        Videos
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <input class="form-check-input" type="checkbox" value="city-meetups" id="flexCheckChecked" checked>
                     <label class="form-check-label" for="flexCheckChecked">
-                      Checked checkbox
+                        Meetups
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <input class="form-check-input" type="checkbox" value="wiki" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
-                      Default checkbox
+                        Wiki
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <input class="form-check-input" type="checkbox" value="forum" id="flexCheckChecked" checked>
                     <label class="form-check-label" for="flexCheckChecked">
-                      Checked checkbox
+                        Forum
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <input class="form-check-input" type="checkbox" value="additional-courses" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
-                      Default checkbox
+                        Additional Courses
                     </label>
                   </div>
             </div>
             <!--End-Header-->
+            <br>
+            <!--Comments-->
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea
+                  id="comments"
+                  class="input-textarea"
+                  name="comment"
+                  placeholder="Enter your comment here..."
+                ></textarea>
+              </div>
+            <!--End-Comments-->
+              <br>
+              <!--button-->
+              <div>
+                <button type="submit" id="submit" class="btn btn-outline-success btn-lg text-scenter">Submit</button>
+              </div>
 
 
         </form>
